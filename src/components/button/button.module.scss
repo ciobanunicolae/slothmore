@@ -1,0 +1,49 @@
+.base {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  min-width: 10ch;
+  min-height: 32px;
+  text-align: center;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out;
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    outline-offset: 2px;
+  }
+}
+.primary {
+  background: hsl(0, 0%, 5%);
+  color: hsl(0, 0%, 95%);
+  &:hover,
+  &:active {
+    background: hsl(0, 0%, 37%);
+  }
+  &:focus {
+    outline: 2px solid hsl(0, 0%, 45%);
+  }
+}
+.secondary {
+  background: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 5%);
+  &:hover,
+  &:active {
+    background: hsl(0, 0%, 85%);
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px hsl(0, 0%, 55%);
+  }
+}
+.small {
+  padding: 0.25rem 0.75rem;
+}
+.medium {
+  padding: 0.75rem 1.25rem;
+}
+.large {
+  padding: 1rem 2rem;
+}
